@@ -3,7 +3,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 public class Solver {
 	private int moves;
-	private Deque<Board> solution;
+	private Deque<Board> solution;// i used this so that when we get the final board we have lifo iteration :D
 	private Boolean solved;
     // find a solution to the initial board (using the A* algorithm)
     public Solver(Board initial)
