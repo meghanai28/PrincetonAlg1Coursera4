@@ -76,7 +76,8 @@ public class Board {
     	{
     		for(int j=0; j<dimension; j++)
     		{
-    			if(board[i][j] !=0 && board[i][j] != ((i*dimension)+j)+1)
+			// you dont need to calculate dist for zero cause its not a tile so we just skip it
+    			if(board[i][j] !=0 && board[i][j] != ((i*dimension)+j)+1) 
     			{
     				int corRow = (board[i][j]-1)/dimension;
     				int corCol =  (board[i][j]-1) - (corRow*dimension);
