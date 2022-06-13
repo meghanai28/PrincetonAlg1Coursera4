@@ -41,7 +41,7 @@ public class Solver {
         			break;
         		}
         		
-        		if(delt1.current.isGoal()|| delt.moves>100)
+        		if(delt1.current.isGoal())
         		{
         			solved = false;
         			break;
